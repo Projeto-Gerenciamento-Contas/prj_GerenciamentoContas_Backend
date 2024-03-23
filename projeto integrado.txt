@@ -1,0 +1,32 @@
+nome do projeto:
+gerenciamento de contas 
+*cruds:
+usuario
+-nome
+-email
+-senha
+
+historico (até 12 meses?)
+-Consumo anteriores segundo conta de luz
+-Custo da energia
+
+Endereço
+-tipo (residencia/comercial/industria/rural)
+-complemento
+-cep
+-rua
+-bairro
+-cidade
+-estado
+
+aparelhos
+-Voltagem e Amperagem
+-Potencia
+-tempo de uso (incrementos de 15 minutos) ao longo do mês ou dia
+-circuito
+
+Consumo de Água e gás
+-tempo d banho
+-vazão
+-Custo de agua
+-Custo de gas
