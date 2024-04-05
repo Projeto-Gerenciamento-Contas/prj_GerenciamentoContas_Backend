@@ -1,4 +1,4 @@
-#ferramentas
+# ferramentas
 recomendado usar o vs code ou o spring tool suite, caso use o vs code instale as extensões
 
 - lombok
@@ -7,7 +7,7 @@ recomendado usar o vs code ou o spring tool suite, caso use o vs code instale as
 - extension pack for spring
 - MySql
 
-#Conexão de dados
+# Conexão de dados
 para fazer a conexão com banco de dados funcionar:
 - ative o mysql, apache e tomcat no xammp
 - entre em src/main/resources/application.properties
