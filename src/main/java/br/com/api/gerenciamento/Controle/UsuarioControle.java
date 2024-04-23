@@ -3,21 +3,16 @@ package br.com.api.gerenciamento.Controle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import br.com.api.gerenciamento.Modelo.*;
-import br.com.api.gerenciamento.Repositorio.GerenciamentoRepositorio;
+import br.com.api.gerenciamento.Repositorio.UsuarioRepositorio;
 
 
 
 @RestController
 @CrossOrigin(origins = "*")
-public class GerenciamentoControle {
+public class UsuarioControle {
 
 	@Autowired
-	private GerenciamentoRepositorio acoes;
-
-	@GetMapping("/ola")
-	public String rota() {
-		return "Olá mundo";
-	}
+	private UsuarioRepositorio acoes;
 
 	@GetMapping("/")
 	public @ResponseBody String inicio() {
@@ -44,7 +39,7 @@ public class GerenciamentoControle {
 		return acoes.save(produto);
 
 	}
-	@RequestMapping(value="/usuarios/{codigo}", method=RequestMethod.DELETE)
+	@DeleteMapping("/usuarios/{codigo}")
 	public @ResponseBody void remover(@PathVariable Integer codigo){
 		UsuarioModelo produto = filtrar(codigo);
 		this.acoes.delete(produto);

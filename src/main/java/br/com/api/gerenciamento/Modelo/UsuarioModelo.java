@@ -1,5 +1,7 @@
 package br.com.api.gerenciamento.Modelo;
 
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +22,9 @@ public class UsuarioModelo {
 	private Long codigo;
 	private String nome;
 	private String email;
+	private Date dataNasc;
 	private String senha;
+	private String msmSenha;
 
 	public String hideSenha() {
 		getSenha();
