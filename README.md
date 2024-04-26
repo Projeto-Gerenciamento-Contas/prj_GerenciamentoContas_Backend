@@ -14,3 +14,13 @@ para fazer a conexão com banco de dados funcionar:
 - copie o nome do banco de dados
 - entre no mysql e digite o comando "create database (nome do banco de dados)" e executa
 - agora execute o app no gerenciamentoApplication.java
+
+# Commits
+toda vez que executar um commit crie uma nova branch contendo um nome simples
+- não faça merges sem o codigo estar funcionando completamente
+- fazer um modelo de banco de dados relacional
+- use o modelo do prof fabio como exemplo
+- "faça exatamente o que foi dito para fazer" -fabio2023
+- use o modelo como referencia para criar as entidades
+  
+
