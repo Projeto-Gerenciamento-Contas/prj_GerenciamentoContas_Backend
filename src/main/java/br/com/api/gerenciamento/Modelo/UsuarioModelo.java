@@ -27,16 +27,7 @@ public class UsuarioModelo {
 	private String senha;
 	private String msmSenha;
 
-	public String hideSenha() {
-		getSenha();
-		int h = getSenha().length();
-		String hSenha = "";
-		for(int i=0; i<h;i++) {
-			hSenha+="*";
-		}
-		return hSenha;
-		
-	}
+	
 
 
 }

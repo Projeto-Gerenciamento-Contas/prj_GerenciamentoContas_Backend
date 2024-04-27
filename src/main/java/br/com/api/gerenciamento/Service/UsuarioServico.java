@@ -28,7 +28,7 @@ public class UsuarioServico {
         if (um.getNome().equals("")) {
             rm.setMensagem("O nome completo é obrigatorio");
             return new ResponseEntity<>(rm, HttpStatus.BAD_REQUEST);
-        } else if (um.getDataNasc() == null) {// trocar o nulo por data vazia
+        } else if (um.getDataNasc() == null) {
             rm.setMensagem("A data de nascimento é obrigatoria");
             return new ResponseEntity<>(rm, HttpStatus.BAD_REQUEST);
         } else if (um.getEmail().equals("")) {
@@ -38,14 +38,26 @@ public class UsuarioServico {
             rm.setMensagem("A senha é obrigatoria");
             return new ResponseEntity<>(rm, HttpStatus.BAD_REQUEST);
         } else if (um.getMsmSenha().equals("")) {
-            rm.setMensagem("A senha é obrigatoria");
+            rm.setMensagem("A confirmação de senha é obrigatoria");
             return new ResponseEntity<>(rm, HttpStatus.BAD_REQUEST);
-        } else {
+        } 
+        else {
             return new ResponseEntity<UsuarioModelo>(ur.save(um), HttpStatus.CREATED);
         }
 
     }
     // caso as senhas não correspondem
-    // esconde a senha
+    
+    // esconde a senha durante a listagem
+    /*public String hideSenha() {
+		um.getSenha();
+		int h = getSenha().length();
+		String hSenha = "";
+		for(int i=0; i<h;i++) {
+			hSenha+="*";
+		}
+		return hSenha;
+		
+	}*/
 
 }
