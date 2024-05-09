@@ -1,6 +1,9 @@
 package br.com.api.gerenciamento.Modelo;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -12,12 +15,14 @@ import lombok.Setter;
 @Table(name = "Enderecos")
 public class EnderecoModelo {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "codEndereco")
     private Long codigoEndereco;
     private int cep;
     private String cidade;
     private String bairro;
     private String rua;
     private int numero;
-    private int complemento;
+    private String complemento;
 
 }
