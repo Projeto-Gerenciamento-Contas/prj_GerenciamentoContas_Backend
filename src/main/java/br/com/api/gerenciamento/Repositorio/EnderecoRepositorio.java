@@ -9,5 +9,6 @@ import br.com.api.gerenciamento.Modelo.EnderecoModelo;
 public interface EnderecoRepositorio extends CrudRepository<EnderecoModelo, Long>{
     //pesquisar por cpf
 	EnderecoModelo findByCep(int cpf);
+	EnderecoModelo findByCodigoEndereco(int codigoEndereco);
     
 }
