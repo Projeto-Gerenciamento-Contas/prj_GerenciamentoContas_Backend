@@ -11,6 +11,7 @@ recomendado usar o vs code ou o spring tool suite, caso use o vs code instale as
 para fazer a conexão com banco de dados funcionar:
 - ative o mysql e apache no xammp
 - entre em src/main/resources/application.properties
+- crie uma conexão (apenas aperte create connection e conect dentro da janela) 
 - copie o nome do banco de dados
 - entre no mysql e digite o comando "create database (nome do banco de dados)" e executa
 - agora execute o app no gerenciamentoApplication.java
