@@ -12,6 +12,7 @@ para fazer a conexão com banco de dados funcionar:
 - ative o mysql e apache no xammp
 - entre em src/main/resources/application.properties
 - copie o nome do banco de dados
+- crie uma conexão (apenas aperte create connection e conect dentro da janela) 
 - entre no mysql e digite o comando "create database (nome do banco de dados)" e executa
 - agora execute o app no gerenciamentoApplication.java
 
