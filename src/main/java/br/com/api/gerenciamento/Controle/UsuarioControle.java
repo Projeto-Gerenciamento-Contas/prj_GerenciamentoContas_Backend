@@ -30,7 +30,7 @@ public class UsuarioControle {
 	}
 
 	@PostMapping("/cadastrar")
-	public @ResponseBody ResponseEntity<?> cadastrar(@RequestBody UsuarioModelo um) {
+	public @ResponseBody ResponseEntity<?> cadastrarU(@RequestBody UsuarioModelo um) {
 		return us.cadastrar(um);
 
 	}
